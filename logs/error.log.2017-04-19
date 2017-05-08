@@ -1,0 +1,3 @@
+2017-04-19 12:10:51 [ main:0 ] - [ERROR] - 2017-04-19 12:10:51 : It is method testError,logger is error
+2017-04-19 12:10:51 [ main:2 ] - [ERROR] - 2017-04-19 12:10:51 : It is method testInfo,logger is error
+2017-04-19 12:10:51 [ main:2 ] - [ERROR] - 2017-04-19 12:10:51 : It is method testDebug,logger is error

@@ -1,0 +1,15 @@
+2017-04-21 14:16:01 [ main:0 ] - [ERROR] - 2017-04-21 14:16:01 : It is method testError,logger is error
+2017-04-21 14:16:01 [ main:2 ] - [ERROR] - 2017-04-21 14:16:01 : It is method testInfo,logger is error
+2017-04-21 14:16:01 [ main:2 ] - [ERROR] - 2017-04-21 14:16:01 : It is method testDebug,logger is error
+2017-04-21 14:19:22 [ main:0 ] - [ERROR] - 2017-04-21 14:19:22 : It is method testError,logger is error
+2017-04-21 14:19:22 [ main:1 ] - [ERROR] - 2017-04-21 14:19:22 : It is method testInfo,logger is error
+2017-04-21 14:19:22 [ main:1 ] - [ERROR] - 2017-04-21 14:19:22 : It is method testDebug,logger is error
+2017-04-21 14:19:41 [ main:0 ] - [ERROR] - 2017-04-21 14:19:41 : It is method testError,logger is error
+2017-04-21 14:19:41 [ main:1 ] - [ERROR] - 2017-04-21 14:19:41 : It is method testInfo,logger is error
+2017-04-21 14:19:41 [ main:2 ] - [ERROR] - 2017-04-21 14:19:41 : It is method testDebug,logger is error
+2017-04-21 14:28:42 [ main:0 ] - [ERROR] - 2017-04-21 14:28:42 : It is method testError,logger is error
+2017-04-21 14:28:42 [ main:1 ] - [ERROR] - 2017-04-21 14:28:42 : It is method testInfo,logger is error
+2017-04-21 14:28:42 [ main:1 ] - [ERROR] - 2017-04-21 14:28:42 : It is method testDebug,logger is error
+2017-04-21 15:44:16 [ main:0 ] - [ERROR] - 2017-04-21 15:44:16 : It is method testError,logger is error
+2017-04-21 15:44:16 [ main:1 ] - [ERROR] - 2017-04-21 15:44:16 : It is method testInfo,logger is error
+2017-04-21 15:44:16 [ main:1 ] - [ERROR] - 2017-04-21 15:44:16 : It is method testDebug,logger is error

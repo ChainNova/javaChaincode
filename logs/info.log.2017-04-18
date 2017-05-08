@@ -1,0 +1,11 @@
+2017-04-18 22:55:26  [ main:0 ] - [ ERROR ]  2017-04-18 22:55:26 : It is method testError,logger is error
+2017-04-18 22:55:26  [ main:1 ] - [ INFO ]  2017-04-18 22:55:26 : It is method testError,logger is info 
+2017-04-18 22:55:26  [ main:1 ] - [ ERROR ]  2017-04-18 22:55:26 : It is method testInfo,logger is error
+2017-04-18 22:55:26  [ main:1 ] - [ INFO ]  2017-04-18 22:55:26 : It is method testInfo,logger is info 
+2017-04-18 22:55:26  [ main:2 ] - [ ERROR ]  2017-04-18 22:55:26 : It is method testDebug,logger is error
+2017-04-18 22:55:26  [ main:2 ] - [ INFO ]  2017-04-18 22:55:26 : It is method testDebug,logger is info 
+
+Simple words to describe main change
+
+Change-Id:xxxxx
+Signed-off-by: XXXXX
