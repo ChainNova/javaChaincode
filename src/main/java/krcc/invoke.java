@@ -411,7 +411,7 @@ public class invoke {
                     continue;
                 }else{
                     log.error("exchange error4");
-                    return  ret;
+                    return  newBadRequsetResponse(ret);
                 }
             }
             String retSTL = saveTxLog(stub,buyOrder,sellOrder);
@@ -730,15 +730,22 @@ public class invoke {
         JSONObject json = ul.getAssetJson(list);
 
         String assStr = stub.getStringState("Assets");
+        if(null == assStr ||"".equals(assStr)){
+            log.error("get Assets error");
+            return "-1";
+        }
         JSONArray assArr = JSONArray.fromObject(assStr);
 
         JSONArray nAssArr = ul.getAssJsonArr(assArr,owner,currency,json);
+
 
         if(nAssArr.isEmpty()||null == nAssArr||"".equals(nAssArr)){
 
             log.error("Failed to replace Asset of owner:"+owner);
 
             return "-1";
+        }else{
+            stub.putStringState("Assets",nAssArr);
         }
 
 
@@ -830,13 +837,44 @@ public class invoke {
         return newSuccessResponse();
     }
 
+    private String saveTxLog(ChaincodeStub stub,JSONObject jB,JSONObject jS){
+
+        log.info("****** in  saveTxLog ******");
+
+        String tx = stub.getStringState("TxLog");
+
+        if(null == tx ||"".equals(tx)){
+
+            log.info("first insert TxLog");
+
+            JSONArray jsonArray = new JSONArray();
+            jsonArray.add(jB);
+            jsonArray.add(jS);
+            stub.putStringState("TxLog",jsonArray.toString());
+
+        }else{
+
+            log.info("insert Txlog");
+
+            JSONArray jar = JSONArray.fromObject(tx);
+            jar.add(jB);
+            jar.add(jS);
+            stub.putStringState("TxLog",jar);
+        }
+
+        log.info("****** Done  saveTxLog ******");
+
+
+        return null;
+    }
+
 
     public Response delete(ChaincodeStub stub,String[] args){
         if(args.size()!=1){
             log.error("Incorrect number of arguments. Expecting: delete(account)");
             return newBadRequsetResponse("Incorrect number of arguments. Expecting: delete(account)");
         }
-        String account = args.get(0);
+        String account = args[0];
         stub.delState(account);
 
         return newSuccessResponse();

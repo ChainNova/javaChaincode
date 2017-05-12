@@ -11,7 +11,6 @@ import static org.hyperledger.fabric.shim.ChaincodeHelper.newBadRequestResponse;
 import static org.hyperledger.fabric.shim.ChaincodeHelper.newSuccessResponse;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by zerppen on 5/2/17.
