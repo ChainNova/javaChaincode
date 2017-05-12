@@ -27,7 +27,7 @@ task printClasspath {
 }
 
 archivesBaseName = "chaincode"
-mainClassName="krcc.KRCC"
+mainClassName="krcc.ChainNavo"
 
 run {
     if (project.hasProperty("appArgs")) {

@@ -25,13 +25,10 @@ public class ChainNavo extends ChaincodeBase{
     public Response init(ChaincodeStub stub){
         log.info("****** In Init ******");
         try{
-            final List<String> args = stub.getArgAsStrings();
-            switch(args.get(0)){
-                case "init":
+
                     return it.initCurrency(stub);
-                default:
-                    return newBadRequestResponse(format("Unknow function: %s", args.get(0)));
-            }
+
+
         }catch(NumberFormatException e){
             log.error(e.toString());
             return newBadRequestResponse(e.toString());
